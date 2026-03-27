@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italiano Coffee Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.svgrepo.com/show/418833/coffee-cafe-starbucks.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" fill="#00704A"/>
+                    <path d="M20 8C13.373 8 8 13.373 8 20s5.373 12 12 12 12-5.373 12-12S26.627 8 20 8zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S10 25.523 10 20 14.477 10 20 10z" fill="white" opacity="0.3"/>
+                    <path d="M26 14c0-3.314-2.686-6-6-6s-6 2.686-6 6v2h12v-2z" fill="white"/>
+                    <path d="M14 18v4a2 2 0 002 2h8a2 2 0 002-2v-4H14z" fill="white"/>
+                    <circle cx="20" cy="26" r="3" fill="white"/>
+                </svg>
+                Italiano
+            </a>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#rewards">Rewards</a></li>
+                <li><a href="#gift-cards">Gift Cards</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-secondary">Sign In</a>
+                <a href="#" class="btn btn-primary">Join Now</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="nav-logo">Italiano</span>
+            <button class="close-btn" id="closeMenu" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#rewards">Rewards</a></li>
+            <li><a href="#gift-cards">Gift Cards</a></li>
+        </ul>
+        <div class="mobile-menu-actions">
+            <a href="#" class="btn btn-secondary">Sign In</a>
+            <a href="#" class="btn btn-primary">Join Now</a>
+        </div>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero-slides" id="heroSlides">
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1920&q=80" alt="Coffee">
+                <div class="hero-slide-overlay"></div>
+                <div class="hero-content">
+                    <h1>Fall into Something Delicious</h1>
+                    <p>Discover our seasonal favorites featuring the rich, warm flavors of autumn.</p>
+                    <a href="#menu" class="btn btn-accent">Explore the Menu</a>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=1920&q=80" alt="Cold Brew">
+                <div class="hero-slide-overlay"></div>
+                <div class="hero-content">
+                    <h1>Cold Brew, Your Way</h1>
+                    <p>Smooth, refreshing and available in multiple flavors. Perfect for any moment.</p>
+                    <a href="#menu" class="btn btn-accent">Order Now</a>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=1920&q=80" alt="Espresso">
+                <div class="hero-slide-overlay"></div>
+                <div class="hero-content">
+                    <h1>Start Your Morning Right</h1>
+                    <p>Handcrafted espresso drinks made with care, just the way you like them.</p>
+                    <a href="#menu" class="btn btn-accent">View Drinks</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots">
+            <button class="hero-dot active" data-index="0"></button>
+            <button class="hero-dot" data-index="1"></button>
+            <button class="hero-dot" data-index="2"></button>
+        </div>
+    </section>
+
+    <section class="categories" id="menu">
+        <div class="container">
+            <h2 class="section-title fade-up">What's New</h2>
+            <div class="categories-grid">
+                <div class="category-card fade-up">
+                    <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                        <path d="M6 1v3M10 1v3M14 1v3"/>
+                    </svg>
+                    <h3>Drinks</h3>
+                    <p>Handcrafted espresso, cold brew, and more</p>
+                    <span class="category-arrow">→</span>
+                </div>
+                <div class="category-card fade-up">
+                    <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                    <h3>Food</h3>
+                    <p>Warm pastries, sandwiches, and snacks</p>
+                    <span class="category-arrow">→</span>
+                </div>
+                <div class="category-card fade-up">
+                    <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                    </svg>
+                    <h3>At Home</h3>
+                    <p>Coffee beans and ready-to-brew options</p>
+                    <span class="category-arrow">→</span>
+                </div>
+                <div class="category-card fade-up">
+                    <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                    </svg>
+                    <h3>Merchandise</h3>
+                    <p>Mugs, tumblers, and gifts</p>
+                    <span class="category-arrow">→</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <div class="featured-header">
+                <h2 class="fade-up">Fall Favorites</h2>
+                <div class="featured-nav fade-up">
+                    <button id="prevDrinks" aria-label="Previous">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button id="nextDrinks" aria-label="Next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="drinks-carousel" id="drinksCarousel">
+                <div class="drink-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc39?w=600&q=80" alt="Pumpkin Spice Latte">
+                    <div class="drink-card-content">
+                        <h3>Pumpkin Spice Latte</h3>
+                        <p>Our signature espresso with real pumpkin, cinnamon, and nutmeg topped with whipped cream.</p>
+                        <div class="drink-card-footer">
+                            <span class="drink-price">$5.95</span>
+                            <button class="btn btn-primary add-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="drink-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=600&q=80" alt="Caramel Macchiato">
+                    <div class="drink-card-content">
+                        <h3>Caramel Macchiato</h3>
+                        <p>Freshly steamed milk with vanilla-flavored syrup, marked with espresso and topped with caramel.</p>
+                        <div class="drink-card-footer">
+                            <span class="drink-price">$5.45</span>
+                            <button class="btn btn-primary add-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="drink-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80" alt="Mocha Frappuccino">
+                    <div class="drink-card-content">
+                        <h3>Mocha Frappuccino</h3>
+                        <p>Coffee, mocha sauce, milk, and ice blended with whipped cream for a chocolatey treat.</p>
+                        <div class="drink-card-footer">
+                            <span class="drink-price">$5.75</span>
+                            <button class="btn btn-primary add-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="drink-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80" alt="Chai Tea Latte">
+                    <div class="drink-card-content">
+                        <h3>Chai Tea Latte</h3>
+                        <p>Black tea infused with cinnamon, clove, and other warming spices with steamed milk.</p>
+                        <div class="drink-card-footer">
+                            <span class="drink-price">$4.95</span>
+                            <button class="btn btn-primary add-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="drink-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Cold Brew">
+                    <div class="drink-card-content">
+                        <h3>Cold Brew</h3>
+                        <p>Slow-steeped for 20 hours for a super-smooth taste. Served cold over ice.</p>
+                        <div class="drink-card-footer">
+                            <span class="drink-price">$3.95</span>
+                            <button class="btn btn-primary add-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="drink-card fade-up">
+                    <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80" alt="Matcha Green Tea Latte">
+                    <div class="drink-card-content">
+                        <h3>Matcha Green Tea Latte</h3>
+                        <p>Smooth and creamy matcha green tea with steamed milk for a gentle energy boost.</p>
+                        <div class="drink-card-footer">
+                            <span class="drink-price">$5.25</span>
+                            <button class="btn btn-primary add-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rewards" id="rewards">
+        <div class="rewards-bg"></div>
+        <div class="container">
+            <div class="rewards-content">
+                <div class="rewards-text fade-up">
+                    <h2>Join Italiano Rewards</h2>
+                    <p>Earn Stars even faster with Italiano Rewards credit card. Get a complimentary drink reward on your first purchase, plus bonus Stars on everything you order.</p>
+                    <a href="#" class="btn btn-accent">Join for Free</a>
+                </div>
+                <div class="rewards-visual fade-up">
+                    <div class="rewards-badge">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <h3>2 Stars</h3>
+                        <p>Per Dollar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content fade-up">
+                <h2>Stay Connected</h2>
+                <p>Get the latest updates on new products, seasonal offerings, and exclusive offers delivered to your inbox.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="gift-cards">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Company</a></li>
+                        <li><a href="#">Our Coffee</a></li>
+                        <li><a href="#">Stories & News</a></li>
+                        <li><a href="#">Italiano Archive</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Careers</h4>
+                    <ul>
+                        <li><a href="#">Culture & Values</a></li>
+                        <li><a href="#">Inclusion & Diversity</a></li>
+                        <li><a href="#">College Achievement</a></li>
+                        <li><a href="#">Alumni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social Impact</h4>
+                    <ul>
+                        <li><a href="#">Ethical Sourcing</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Environment</a></li>
+                        <li><a href="#">Global Report</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Order & Pick Up</h4>
+                    <ul>
+                        <li><a href="#">Ways to Order</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Order & Pick Up</a></li>
+                        <li><a href="#">Explore Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Italiano Coffee Company. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookie Preferences</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenu = document.getElementById('closeMenu');
+        const overlay = document.getElementById('overlay');
+
+        function openMenu() {
+            mobileMenu.classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenuHandler() {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', openMenu);
+        closeMenu.addEventListener('click', closeMenuHandler);
+        overlay.addEventListener('click', closeMenuHandler);
+
+        document.querySelectorAll('.mobile-menu-links a').forEach(link => {
+            link.addEventListener('click', closeMenuHandler);
+        });
+
+        const heroSlides = document.getElementById('heroSlides');
+        const heroDots = document.querySelectorAll('.hero-dot');
+        let currentSlide = 0;
+        let autoSlideInterval;
+
+        function goToSlide(index) {
+            currentSlide = index;
+            heroSlides.style.transform = `translateX(-${index * 100}%)`;
+            heroDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            goToSlide((currentSlide + 1) % 3);
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 6000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        heroDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                stopAutoSlide();
+                goToSlide(parseInt(dot.dataset.index));
+                startAutoSlide();
+            });
+        });
+
+        startAutoSlide();
+
+        const drinksCarousel = document.getElementById('drinksCarousel');
+        const prevDrinks = document.getElementById('prevDrinks');
+        const nextDrinks = document.getElementById('nextDrinks');
+
+        prevDrinks.addEventListener('click', () => {
+            drinksCarousel.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        nextDrinks.addEventListener('click', () => {
+            drinksCarousel.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        document.querySelectorAll('.add-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (this.classList.contains('added')) return;
+                
+                this.classList.add('added');
+                const originalText = this.textContent;
+                this.textContent = 'Added!';
+                
+                setTimeout(() => {
+                    this.classList.remove('added');
+                    this.textContent = originalText;
+                }, 1500);
+            });
+        });
+
+        const newsletterForm = document.getElementById('newsletterForm');
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            const input = this.querySelector('input');
+            
+            btn.textContent = 'Subscribed!';
+            btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Subscribed!';
+            input.value = '';
+            
+            setTimeout(() => {
+                btn.textContent = 'Subscribe';
+                btn.innerHTML = 'Subscribe';
+            }, 3000);
+        });
+
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = 72;
+                    const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
